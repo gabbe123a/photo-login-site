@@ -8,45 +8,64 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
+      background: linear-gradient(to bottom right, #111, #222);
+      color: white;
     }
 
-    h1 {
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+    .gallery-container {
       padding: 40px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
       max-width: 1200px;
       margin: auto;
     }
 
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease;
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .gallery img:hover {
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-item:hover {
       transform: scale(1.03);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
 
-  <h1>Swedish Military Gallery</h1>
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="1275979-Jet-Fighters-Saab-JAS-39-Gripen-Gripen-Aircraft-Hd.jpg" alt="Gripen Jet">
+    </div>
+    <div class="gallery-item">
+      <img src="istockphoto-935725322-612x612.jpg" alt="Swedish Navy">
+    </div>
+    <div class="gallery-item">
+      <img src="Strv122_3.jpg" alt="Strv 122 Tank">
+    </div>
 
-  <div class="gallery">
-    <img src="1275979-Jet-Fighters-Saab-JAS-39-Gripen-Gripen-Aircraft-Hd.jpg" alt="Gripen Jet">
-    <img src="istockphoto-935725322-612x612.jpg" alt="Navy Corvette">
-    <img src="Strv122_3.jpg" alt="Strv 122 Tank">
+    <!-- 💡 Add more images below (just copy and paste the block below) -->
+    <!--
+    <div class="gallery-item">
+      <img src="your-image-name.jpg" alt="Description">
+    </div>
+    -->
   </div>
 
 </body>
 </html>
+
