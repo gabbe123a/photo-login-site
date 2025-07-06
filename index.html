@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Login & Sign Up</title>
+  <meta charset="UTF-8">
+  <title>Login / Sign Up</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <div class="background"></div>
+
   <div class="form-container">
     <h2 id="form-title">Login</h2>
 
     <form id="auth-form" onsubmit="handleSubmit(event)">
-      <input type="text" id="username" placeholder="Username" required><br>
-      <input type="password" id="password" placeholder="Password" required><br>
-      <input type="email" id="email" placeholder="Email" style="display:none;"><br>
-
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="email" id="email" placeholder="Email" style="display: none;">
       <button type="submit" id="submit-btn">Login</button>
     </form>
 
@@ -31,14 +34,15 @@
         ? 'No account? <a href="#" onclick="toggleForm()">Sign up here</a>'
         : 'Already have an account? <a href="#" onclick="toggleForm()">Login</a>';
 
-      document.getElementById('email').style.display = isLogin ? 'none' : 'inline-block';
+      document.getElementById('email').style.display = isLogin ? 'none' : 'block';
     }
 
     function handleSubmit(event) {
       event.preventDefault();
-      // You can add real login logic here if needed
-      window.location.href = "main.html"; // Redirect to photo page
+      // Simulated redirect after login/sign-up
+      window.location.href = "main.html";
     }
   </script>
+
 </body>
 </html>
