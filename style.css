@@ -1,39 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 50px;
-  background-color: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slideshow 15s infinite;
+  z-index: -1;
+  filter: brightness(0.6);
+}
+
+@keyframes slideshow {
+  0% {
+    background-image: url('https://tse2.mm.bing.net/th/id/OIP.RH-cV9IxYazI9x_jisJUqwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3');
+  }
+  33% {
+    background-image: url('https://wallpapercrafter.com/desktop4/1275979-Jet-Fighters-Saab-JAS-39-Gripen-Gripen-Aircraft-Hd.jpg');
+  }
+  66% {
+    background-image: url('https://media.istockphoto.com/id/935725322/photo/swedish-navy-missile-corvette.jpg?s=612x612&w=0&k=20&c=Ec3FkWsZfHohzWJ-pLiZc97oUaxO8qFv00Oyb2Co4js=');
+  }
+  100% {
+    background-image: url('https://tse2.mm.bing.net/th/id/OIP.RH-cV9IxYazI9x_jisJUqwHaEK?rs=1&pid=ImgDetMain&o=7&rm=3');
+  }
 }
 
 .form-container {
-  background: white;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 30px;
-  border-radius: 10px;
-  display: inline-block;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
 }
 
 input {
-  padding: 10px;
-  margin: 10px;
-  width: 80%;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
 button {
-  padding: 10px 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
   margin-top: 10px;
-  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.gallery img {
-  width: 150px;
-  margin: 10px;
-  border: 2px solid #ccc;
-  cursor: pointer;
-  transition: transform 0.2s;
+button:hover {
+  background-color: #004c99;
 }
 
-.gallery img:hover {
-  transform: scale(1.1);
-  border-color: #333;
+p {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
