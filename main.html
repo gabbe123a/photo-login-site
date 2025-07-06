@@ -1,71 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Gallery</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #111, #222);
-      color: white;
+      background-color: #0d0d0d;
+      color: #fff;
     }
 
-    .gallery-container {
-      padding: 40px;
+    .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      padding: 40px;
+      max-width: 1600px;
       margin: auto;
     }
 
-    .gallery-item {
-      overflow: hidden;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .gallery-item img {
+    .gallery img {
       width: 100%;
       height: auto;
-      display: block;
-      transition: transform 0.4s ease;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
     }
 
-    .gallery-item:hover {
-      transform: scale(1.03);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
-    }
-
-    .gallery-item:hover img {
+    .gallery img:hover {
       transform: scale(1.05);
     }
   </style>
 </head>
 <body>
 
-  <div class="gallery-container">
-    <div class="gallery-item">
-      <img src="1275979-Jet-Fighters-Saab-JAS-39-Gripen-Gripen-Aircraft-Hd.jpg" alt="Gripen Jet">
-    </div>
-    <div class="gallery-item">
-      <img src="istockphoto-935725322-612x612.jpg" alt="Swedish Navy">
-    </div>
-    <div class="gallery-item">
-      <img src="Strv122_3.jpg" alt="Strv 122 Tank">
-    </div>
-
-    <!-- 💡 Add more images below (just copy and paste the block below) -->
-    <!--
-    <div class="gallery-item">
-      <img src="your-image-name.jpg" alt="Description">
-    </div>
-    -->
+  <div class="gallery">
+    <!-- BEGIN IMAGE GRID -->
+    <img src="1fb945020c92b8977947e6dc4d393591.jpg" alt="">
+    <img src="2cd2343740fece1a893b6e8346d4bd37.jpg" alt="">
+    <img src="2d17f4bd65f26611242201bac12b670b.jpg" alt="">
+    <img src="2f1c76693f594b5e699072e072074913.jpg" alt="">
+    <img src="4a29d2cd1544e6c50b0b6f1b65e1f152.jpg" alt="">
+    <img src="4a63848e5325eac42864316f432cd70d.jpg" alt="">
+    <img src="4d7bf0873877440ce0f3879c88db454f.jpg" alt="">
+    <img src="4f688bdc326c3aa233d33bbd0c19efab.jpg" alt="">
+    <img src="4f770c2f7d4238cc6f9e202ad048b61b.jpg" alt="">
+    <img src="05e4ce3fa3fdd3efa6755047688218f9.jpg" alt="">
+    <img src="5a6a0824b67a3832ccf10e3e4596a192.jpg" alt="">
+    <img src="5b36993ef407d620510a05d1c082cd7e.jpg" alt="">
+    <img src="5efdf43bcd4ee636d49d43c891cada57.jpg" alt="">
+    <img src="8b450843a7660540b4c5d4710f2a937a.jpg" alt="">
+    <img src="8c4bf6378d1c42287c1895c9d36892cb.jpg" alt="">
+    <img src="8d09911a6efd7408a343ffa31110ef05.jpg" alt="">
+    <img src="8f29bada619382872336beccd7609561.jpg" alt="">
+    <img src="35fd36991c8f27d64012e1b091170b6f.jpg" alt="">
+    <img src="36d2f630dbd33b03c07f260f3e4c85f1.jpg" alt="">
+    <img src="51a9f626bb6903071a3da0174d60c4f2.jpg" alt="">
+    <img src="57aba6fe9e1666fef962ada569959086.jpg" alt="">
+    <img src="105e4b298f00c4399dd3164210022d8c.jpg" alt="">
+    <img src="136c2fde63fdbc021e80fab05443356f.jpg" alt="">
+    <img src="322cd57e8787da3fee367b55e1a911d6.jpg" alt="">
+    <img src="539e088a78099164bba7c04197e48749.jpg" alt="">
+    <img src="566bc13a2477895d5dcddd47aeedf563.jpg" alt="">
+    <img src="0778ea4d2aa25528dea5f111ddffaad1.jpg" alt="">
+    <img src="6514e0564a4279344f310f5d5f98306e.jpg" alt="">
+    <img src="9814e4c0ec6d0cc712a4a339d147c27e-1400.jpg" alt="">
+    <img src="45857f8ab811b4a3c2e2aeff0b822911.jpg" alt="">
+    <img src="1275979-Jet-Fighters-Saab-JAS-39-Gripen-Gripen-Aircraft-Hd.jpg" alt="">
+    <img src="380809031bcb6c5307d7d7169fd4bf88.jpg" alt="">
+    <img src="a0de31a8be723282222dd259164e91a0.jpg" alt="">
+    <img src="aaaaaaaaaa.png" alt="">
+    <img src="b3b3ae49d3346cb4ff8f55f959841d87.jpg" alt="">
+    <img src="b96c1ac425874f773dd32e44b6eb398d.jpg" alt="">
+    <img src="b4554b25c0c29b228397533001528bd1.jpg" alt="">
+    <img src="c1f92f3a10b49b5ee3f5205490262ab9.jpg" alt="">
+    <img src="c5c519d4c562794e907ade25144bc8c4.jpg" alt="">
+    <img src="c081a0242605fa1806cc0aac5a1165f7.jpg" alt="">
+    <img src="Czech_JAS-39_Gripen_over_the_Curonian_Spit_in_2012.jpg" alt="">
+    <img src="d2926b9ee08c9c4e423545110db0af14.jpg" alt="">
+    <img src="d660105c5961e4f2a5692313aea39410.jpg" alt="">
+    <img src="DANGH.jpg" alt="">
+    <img src="e7dedfad5340a51459edfd153ceb5ed0.jpg" alt="">
+    <img src="e8dbea82385920ee6cd99c8aa3d0a01e.jpg" alt="">
+    <img src="e9b87a67219edb9413a03b8e5a623395.jpg" alt="">
+    <img src="e35cf665ce5c01fa4ed1c7cb480ed4f2.jpg" alt="">
+    <img src="e24365c5c561c494e6c553955f05ac09.jpg" alt="">
+    <img src="efd430206bfc51410772761583c77ab4.jpg" alt="">
+    <img src="f7de506c33e91672fcaef45aa2c0504f.jpg" alt="">
+    <img src="f18.jpg" alt="">
+    <img src="f0370a1ac5ac4da51e5f580a414ca997.jpg" alt="">
+    <img src="f478a546447415b1bb93ef79d7a15655.jpg" alt="">
+    <img src="ffe29b6466a60000608ec8446355cba1.jpg" alt="">
+    <img src="Hornet-flare-launch.webp" alt="">
+    <img src="IMG_1638.webp" alt="">
+    <img src="istockphoto-935725322-612x612.jpg" alt="">
+    <img src="OIP.webp" alt="">
+    <img src="Strv122_3.jpg" alt="">
+    <!-- END IMAGE GRID -->
   </div>
 
 </body>
 </html>
-
